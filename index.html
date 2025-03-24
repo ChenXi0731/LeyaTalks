@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>樂壓Talks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="app">
+        <!-- 页面容器 -->
+        <div class="page-container">
+            <!-- 头部导航 -->
+            <header class="header">
+                <div class="logo">
+                    <img src="images/LeyaLogo.png" alt="樂壓Logo" class="logo-img">
+                </div>
+                <div class="nav-tabs">
+                    <div class="tab active" data-page="home">全部</div>
+                    <div class="tab" data-page="follow">關注</div>
+                </div>
+                <div class="user-icon">
+                    <i class="fa-solid fa-user-circle"></i>
+                </div>
+            </header>
+
+            <!-- 主页内容 -->
+            <div class="content-area" id="home-page">
+                <div class="post-list">
+                    <!-- 微熊版帖子 -->
+                    <div class="post-item">
+                        <div class="post-avatar">
+                            <img src="images/head.png" alt="微熊版">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-header">
+                                <div class="post-name">微熊版</div>
+                                <div class="post-username">@bread_apm</div>
+                            </div>
+                            <div class="post-text">把頭摘了，沒人愛吃...</div>
+                            <div class="post-subtext">如果，今天把頭摘下來，事情的起因是...</div>
+                            <div class="post-images">
+                                <img src="https://via.placeholder.com/150x150/ffcccc" alt="圖片1">
+                                <img src="https://via.placeholder.com/150x150/ffcccc" alt="圖片2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 墨力版帖子 -->
+                    <div class="post-item">
+                        <div class="post-avatar">
+                            <img src="images/head.png" alt="墨力版">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-header">
+                                <div class="post-name">墨力版</div>
+                                <div class="post-username">@gogocorn</div>
+                            </div>
+                            <div class="post-text">老天保佑</div>
+                            <div class="post-subtext">金山銀山都有</div>
+                        </div>
+                    </div>
+
+                    <!-- 蒲鴉版帖子 -->
+                    <div class="post-item">
+                        <div class="post-avatar">
+                            <img src="images/head.png" alt="蒲鴉版">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-header">
+                                <div class="post-name">蒲鴉版</div>
+                                <div class="post-username">@Baikinman</div>
+                            </div>
+                            <div class="post-text">每日金句</div>
+                            <div class="post-subtext">不求做個完美的人，而是接受不完美的...</div>
+                            <div class="post-images">
+                                <img src="https://via.placeholder.com/150x150/ffffff" alt="白鸽">
+                                <img src="https://via.placeholder.com/150x150/333333" alt="圖片2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 空白聊天页面 -->
+            <div class="content-area hidden" id="chat-page">
+                <div class="chat-container">
+                    <div class="chat-input-container">
+                        <input type="text" class="chat-input" placeholder="試著說些什麼吧~">
+                        <button class="send-btn">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 功能分类页面 -->
+            <div class="content-area hidden" id="category-page">
+                <div class="category-list">
+                    <div class="category-row">
+                        <div class="category-item">
+                            <div class="category-icon">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <div class="category-name">正念</div>
+                        </div>
+                        <div class="category-item">
+                            <div class="category-icon">
+                                <i class="fa-solid fa-cloud-moon"></i>
+                            </div>
+                            <div class="category-name">冥想</div>
+                        </div>
+                        <div class="category-item">
+                            <div class="category-icon">
+                                <i class="fa-solid fa-clipboard-check"></i>
+                            </div>
+                            <div class="category-name">心理測驗</div>
+                        </div>
+                    </div>
+                    
+                    <div class="category-row">
+                        <div class="category-item coming-soon">
+                            <div class="category-icon">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div class="category-name">即將新增</div>
+                        </div>
+                        <div class="category-item coming-soon">
+                            <div class="category-icon">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div class="category-name">即將新增</div>
+                        </div>
+                        <div class="category-item coming-soon">
+                            <div class="category-icon">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div class="category-name">即將新增</div>
+                        </div>
+                    </div>
+                    
+                    <div class="category-row">
+                        <div class="category-item coming-soon">
+                            <div class="category-icon">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div class="category-name">即將新增</div>
+                        </div>
+                        <div class="category-item coming-soon">
+                            <div class="category-icon">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div class="category-name">即將新增</div>
+                        </div>
+                        <div class="category-item coming-soon">
+                            <div class="category-icon">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div class="category-name">即將新增</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 底部导航 -->
+            <footer class="footer">
+                <div class="nav-item active" data-page="home">
+                    <i class="fa-solid fa-home"></i>
+                </div>
+                <div class="nav-item" data-page="category">
+                    <i class="fa-solid fa-th-large"></i>
+                </div>
+                <div class="nav-item" data-page="chat">
+                    <i class="fa-solid fa-comment-dots"></i>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
